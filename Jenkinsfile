@@ -16,7 +16,8 @@ pipeline {
     }
    stage('Deploy with playbook'){
      steps{
-	ansiblePlaybook(playbook: 'install-deploy-kubernetes-playbook.yml')
+	# ansiblePlaybook(playbook: 'install-deploy-kubernetes-playbook.yml')
+        sh 'ansible-playbook install-deploy-kubernetes-playbook.yml'
      }
    }
   }
