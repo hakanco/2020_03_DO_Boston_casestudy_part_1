@@ -16,7 +16,7 @@ pipeline {
     }
    stage('Deploy with playbook'){
       steps{
-        sh 'ansible-playbook install-deploy-kubernetes-playbook.yml'
+        sh 'ansible-playbook continous-deployment-playbook.yml'
      }
    }
   }
